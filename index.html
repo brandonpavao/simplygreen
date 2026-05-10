@@ -19,9 +19,11 @@
     <a href="#top" class="logo">
       <img src="logo.JPG" alt="Simply Green and Garden Spray" class="logo-img">
     </a>
+
     <button id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
+
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#hero">Home</a>
       <a href="#programs">Services</a>
@@ -31,9 +33,9 @@
 
   <!-- ═══ MOBILE MENU ══════════════════════════════════ -->
   <nav id="mobile-menu" aria-label="Mobile navigation">
-    <a href="#hero"     class="menu-link">Home</a>
+    <a href="#hero" class="menu-link">Home</a>
     <a href="#programs" class="menu-link">Services</a>
-    <a href="#reviews"  class="menu-link">Reviews</a>
+    <a href="#reviews" class="menu-link">Reviews</a>
   </nav>
 
   <!-- ═══ HERO ═════════════════════════════════════════ -->
@@ -43,11 +45,13 @@
       &ldquo;<span class="green">care</span>&rdquo; in<br>
       <span class="green">lawn care</span>
     </h1>
+
     <div class="stars-display">
       <div class="star-row" id="hero-stars"></div>
       <span class="rating-num" id="hero-rating-num"></span>
       <a href="#reviews" class="review-count" id="hero-review-count"></a>
     </div>
+
     <a class="review-link" id="open-review-modal" role="button" tabindex="0">
       Leave your review &rarr;
     </a>
@@ -62,7 +66,6 @@
       <div class="carousel-track-wrap">
         <div class="carousel-track" id="programs-track">
 
-          <!-- PROGRAM 1 -->
           <div class="program-card">
             <h3>Program 1</h3>
             <ul>
@@ -75,7 +78,6 @@
             <div class="note">Low commitment option</div>
           </div>
 
-          <!-- PROGRAM 2 -->
           <div class="program-card">
             <div class="badge">Most Common</div>
             <h3>Program 2</h3>
@@ -91,7 +93,6 @@
             <div class="note">Recommended for simple lawn treatment</div>
           </div>
 
-          <!-- PROGRAM 3 -->
           <div class="program-card">
             <div class="badge badge-green">Best Results</div>
             <h3>Program 3</h3>
@@ -106,15 +107,15 @@
             <div class="note">Premium lawn care with maximum results</div>
           </div>
 
-        </div><!-- /programs-track -->
-      </div><!-- /carousel-track-wrap -->
+        </div>
+      </div>
 
       <div class="carousel-dots" id="programs-dots">
         <div class="dot active" data-i="0"></div>
-        <div class="dot"        data-i="1"></div>
-        <div class="dot"        data-i="2"></div>
+        <div class="dot" data-i="1"></div>
+        <div class="dot" data-i="2"></div>
       </div>
-    </div><!-- /section-inner -->
+    </div>
   </section>
 
   <!-- ═══ ADDITIONAL SERVICES ══════════════════════════ -->
@@ -161,8 +162,8 @@
           <p>Prevents water from freezing in irrigation pipes before winter sets in.</p>
         </div>
 
-      </div><!-- /services-grid -->
-    </div><!-- /section-inner -->
+      </div>
+    </div>
   </section>
 
   <!-- ═══ REVIEWS ═══════════════════════════════════════ -->
@@ -172,7 +173,7 @@
 
       <div class="tabs" role="tablist">
         <button class="tab-btn active" data-tab="customers" role="tab" aria-selected="true">Customers</button>
-        <button class="tab-btn"        data-tab="owner"     role="tab" aria-selected="false">Owner</button>
+        <button class="tab-btn" data-tab="owner" role="tab" aria-selected="false">Owner</button>
       </div>
 
       <div id="tab-customers" role="tabpanel">
@@ -188,7 +189,7 @@
         </div>
         <div class="review-counter" id="owner-counter"></div>
       </div>
-    </div><!-- /section-inner -->
+    </div>
   </section>
 
   <!-- ═══ CONTACT ═══════════════════════════════════════ -->
@@ -196,15 +197,17 @@
     <div class="section-inner">
       <div class="section-title">Simply Green and Garden Spray</div>
       <p class="contact-sub">Mail or Phone for Inquiries</p>
+
       <div class="contact-info">
         <p>&#128222; <a href="tel:+19058581870">(905) 858-1870</a></p>
         <p>&#9993; <a href="mailto:simplygreengardenspray@gmail.com">simplygreengardenspray@gmail.com</a></p>
       </div>
+
       <div class="contact-btns">
-        <a class="btn btn-green"   href="tel:+19058581870">Call Now</a>
+        <a class="btn btn-green" href="tel:+19058581870">Call Now</a>
         <a class="btn btn-outline" href="mailto:simplygreengardenspray@gmail.com">Email</a>
       </div>
-    </div><!-- /section-inner -->
+    </div>
   </section>
 
   <!-- ═══ FOOTER ════════════════════════════════════════ -->
@@ -213,12 +216,106 @@
     <p>Serving the Greater Toronto Area</p>
   </footer>
 
-</div><!-- /site-wrapper -->
+</div>
+
+<!-- ═══ CUSTOMER PROFILE MODAL ════════════════════════ -->
+<div class="modal-overlay profile-modal-overlay" id="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
+  <div class="modal-box profile-modal-box">
+
+    <button class="modal-close profile-modal-close" id="close-profile-modal" aria-label="Close">&times;</button>
+
+    <div class="profile-step active" id="profile-step-intro">
+      <h2 class="profile-intro-title" id="profile-modal-title">Already with us?</h2>
+
+      <div class="profile-intro-body">
+        <p>Welcome, valued customer.</p>
+
+        <p>
+          We are updating our customer files by adding email addresses where possible.
+          This will help us send invoices and announcements more efficiently.
+        </p>
+
+        <p>
+          Please submit your profile information. We will compare it with our customer records
+          and follow up on the next visit.
+        </p>
+
+        <p>Eddie</p>
+      </div>
+
+      <div class="profile-intro-actions">
+        <button class="profile-action-btn profile-action-solid" id="profile-close-btn">Close</button>
+        <button class="profile-action-btn profile-action-outline" id="profile-customer-btn">I’m a Customer<br>with Simply Green</button>
+      </div>
+    </div>
+
+    <div class="profile-step" id="profile-step-form">
+      <div class="profile-form-grid">
+
+        <div class="profile-field">
+          <label for="profile-first-name">First Name <span class="req">*</span></label>
+          <input type="text" id="profile-first-name" placeholder="Enter your text here" autocomplete="given-name">
+        </div>
+
+        <div class="profile-field">
+          <label for="profile-last-name">Last Name <span class="req">*</span></label>
+          <input type="text" id="profile-last-name" placeholder="Enter your text here" autocomplete="family-name">
+        </div>
+
+        <div class="profile-field profile-field-full">
+          <label for="profile-email">Preferred Email Address <span class="req">*</span></label>
+          <input type="email" id="profile-email" placeholder="Enter your text here" autocomplete="email">
+        </div>
+
+        <div class="profile-field profile-field-full">
+          <label for="profile-email-confirm">Confirm your Email Address <span class="req">*</span></label>
+          <input type="email" id="profile-email-confirm" placeholder="Enter your text here" autocomplete="off">
+        </div>
+
+      </div>
+
+      <div class="profile-privacy">
+        <p>Your information stays private.</p>
+        <p>
+          We only ask for your name and email so we can match your profile to our customer records.
+          Your email will be used for invoices and seasonal announcements.
+        </p>
+      </div>
+
+      <div class="profile-submit-wrap">
+        <button class="profile-submit-btn" id="profile-submit">Submit your email</button>
+        <div class="profile-error-box" id="profile-error-box"></div>
+      </div>
+    </div>
+
+    <div class="profile-step" id="profile-step-success">
+      <div class="profile-success">
+        <h2>Thank you for your cooperation!</h2>
+
+        <p class="profile-success-main">
+          You won’t receive any emails until verbal confirmations.
+        </p>
+
+        <p class="profile-review-prompt">Loved your grass with us?</p>
+
+        <button class="profile-review-btn" id="profile-success-review">
+          Help build our digital reputation, Leave a Review!
+        </button>
+
+        <button class="profile-done-btn" id="profile-success-close">
+          Done, Close
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <!-- ═══ REVIEW MODAL ══════════════════════════════════ -->
 <div class="modal-overlay" id="review-modal" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
-  <div class="modal-box">
+  <div class="modal-box review-modal-box">
     <button class="modal-close" id="close-review-modal" aria-label="Close">&times;</button>
+
     <div id="review-form-content">
       <div class="modal-title" id="review-modal-title">Leave a Review</div>
 
@@ -262,10 +359,13 @@
   <div class="modal-box modal-box--dark">
     <button class="modal-close modal-close--light" id="close-gallery-modal" aria-label="Close">&times;</button>
     <div class="gallery-counter" id="gallery-counter">1 / 1</div>
+
     <div class="gallery-img-wrap" id="gallery-img-wrap">
       <div class="gallery-placeholder">&#127807;</div>
     </div>
+
     <div class="gallery-dots-row" id="gallery-dots-row"></div>
+
     <div class="gallery-nav">
       <button class="gallery-btn" id="gallery-prev">&#8249;</button>
       <button class="gallery-btn" id="gallery-next">&#8250;</button>
