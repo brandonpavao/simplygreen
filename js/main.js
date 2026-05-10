@@ -45,13 +45,9 @@ const customerReviews = [
 
 const ownerPosts = [
   {
-    text:   "All spring fertilizer applications are being scheduled now.",
+    text:   "I'll be posting before and afters of current lawns here. Stay Tuned",
     photos: []
   },
-  {
-    text:   'Featuring bad crab grass, 6 months later Vs the nieghbours lot',
-    photos: []
-  }
 ];
 
 /* ═══════════════════════════════════════════════════════════
