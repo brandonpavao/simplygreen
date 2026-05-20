@@ -14,50 +14,20 @@
 
 <div id="site-wrapper">
 
-  <!-- ═══ HEADER ═══════════════════════════════════════ -->
   <header id="top">
     <a href="#top" class="logo">
       <img src="logo.JPG" alt="Simply Green and Garden Spray" class="logo-img">
     </a>
-
-    <button id="hamburger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#hero">Home</a>
-      <a href="#programs">Services</a>
-      <a href="#reviews">Reviews</a>
-    </nav>
   </header>
 
-  <!-- ═══ MOBILE MENU ══════════════════════════════════ -->
-  <nav id="mobile-menu" aria-label="Mobile navigation">
-    <a href="#hero" class="menu-link">Home</a>
-    <a href="#programs" class="menu-link">Services</a>
-    <a href="#reviews" class="menu-link">Reviews</a>
-  </nav>
-
-  <!-- ═══ HERO ═════════════════════════════════════════ -->
   <section id="hero">
     <h1 class="hero-heading">
       Putting the<br>
       &ldquo;<span class="green">care</span>&rdquo; in<br>
       <span class="green">lawn care</span>
     </h1>
-
-    <div class="stars-display">
-      <div class="star-row" id="hero-stars"></div>
-      <span class="rating-num" id="hero-rating-num"></span>
-      <a href="#reviews" class="review-count" id="hero-review-count"></a>
-    </div>
-
-    <a class="review-link" id="open-review-modal" role="button" tabindex="0">
-      Leave your review &rarr;
-    </a>
   </section>
 
-  <!-- ═══ PROGRAMS ═════════════════════════════════════ -->
   <section id="programs">
     <div class="section-inner">
       <div class="section-title">Services offered</div>
@@ -98,10 +68,9 @@
             <h3>Program 3</h3>
             <ul>
               <li>All Program 2 services</li>
-              <li>Eco Clear included</li>
+              <li><strong>Eco Clear included</strong></li>
+              <li><strong>Crabgrass management included</strong></li>
               <li>Priority visits</li>
-              <li>Full finish treatment</li>
-              <li>Crabgrass management included</li>
             </ul>
             <div class="visits">5 visits in 11 applications</div>
             <div class="note">Premium lawn care with maximum results</div>
@@ -118,10 +87,10 @@
     </div>
   </section>
 
-  <!-- ═══ ADDITIONAL SERVICES ══════════════════════════ -->
   <section id="services">
     <div class="section-inner">
       <div class="section-title">Additional Services</div>
+      <div class="section-sub">Pricing depends on lot size. Contact for details.</div>
 
       <div class="services-grid">
 
@@ -132,12 +101,13 @@
         </div>
 
         <div class="service-card">
-          <div class="service-badges"><span class="badge badge-green">Also in Program 3</span></div>
+          <div class="service-badges"><span class="badge badge-green">Discounted with Program 3</span></div>
           <h3>Eco Clear</h3>
           <p>Used for driveway edges and sidewalks. Not intended for lawn application.</p>
         </div>
 
         <div class="service-card">
+          <div class="service-badges"><span class="badge badge-green">Discounted with Program 3</span></div>
           <h3>Crabgrass Management</h3>
           <p>Helps control germination of weeds, crabgrass, and wild grasses over time.</p>
         </div>
@@ -166,33 +136,6 @@
     </div>
   </section>
 
-  <!-- ═══ REVIEWS ═══════════════════════════════════════ -->
-  <section id="reviews">
-    <div class="section-inner">
-      <div class="section-title">Reviews</div>
-
-      <div class="tabs" role="tablist">
-        <button class="tab-btn active" data-tab="customers" role="tab" aria-selected="true">Customers</button>
-        <button class="tab-btn" data-tab="owner" role="tab" aria-selected="false">Owner</button>
-      </div>
-
-      <div id="tab-customers" role="tabpanel">
-        <div class="reviews-carousel-wrap">
-          <div class="reviews-track" id="customer-track"></div>
-        </div>
-        <div class="review-counter" id="customer-counter"></div>
-      </div>
-
-      <div id="tab-owner" role="tabpanel" hidden>
-        <div class="reviews-carousel-wrap">
-          <div class="reviews-track" id="owner-track"></div>
-        </div>
-        <div class="review-counter" id="owner-counter"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ CONTACT ═══════════════════════════════════════ -->
   <section id="contact">
     <div class="section-inner">
       <div class="section-title">Simply Green and Garden Spray</div>
@@ -210,7 +153,6 @@
     </div>
   </section>
 
-  <!-- ═══ FOOTER ════════════════════════════════════════ -->
   <footer>
     <p>&copy; 2025 Simply Green and Garden Spray. All rights reserved.</p>
     <p>Serving the Greater Toronto Area</p>
@@ -218,7 +160,6 @@
 
 </div>
 
-<!-- ═══ CUSTOMER PROFILE MODAL ════════════════════════ -->
 <div class="modal-overlay profile-modal-overlay" id="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
   <div class="modal-box profile-modal-box">
 
@@ -296,12 +237,6 @@
           You won’t receive any emails until verbal confirmations.
         </p>
 
-        <p class="profile-review-prompt">Loved your grass with us?</p>
-
-        <button class="profile-review-btn" id="profile-success-review">
-          Help build our digital reputation, Leave a Review!
-        </button>
-
         <button class="profile-done-btn" id="profile-success-close">
           Done, Close
         </button>
@@ -311,69 +246,6 @@
   </div>
 </div>
 
-<!-- ═══ REVIEW MODAL ══════════════════════════════════ -->
-<div class="modal-overlay" id="review-modal" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
-  <div class="modal-box review-modal-box">
-    <button class="modal-close" id="close-review-modal" aria-label="Close">&times;</button>
-
-    <div id="review-form-content">
-      <div class="modal-title" id="review-modal-title">Leave a Review</div>
-
-      <div class="form-group">
-        <label>Your rating <span class="req">*</span></label>
-        <div class="star-picker" id="star-picker">
-          <span class="sp-star" data-v="1">&#9733;</span>
-          <span class="sp-star" data-v="2">&#9733;</span>
-          <span class="sp-star" data-v="3">&#9733;</span>
-          <span class="sp-star" data-v="4">&#9733;</span>
-          <span class="sp-star" data-v="5">&#9733;</span>
-        </div>
-        <div class="form-error" id="err-stars">Please select a rating.</div>
-      </div>
-
-      <div class="form-group">
-        <label for="rv-name">Name (First + last initial) <span class="req">*</span></label>
-        <input type="text" id="rv-name" placeholder="e.g. Sarah M." maxlength="40" autocomplete="off">
-        <div class="form-error" id="err-name">Please enter your name.</div>
-      </div>
-
-      <div class="form-group">
-        <label for="rv-text">Your review <span class="req">*</span></label>
-        <textarea id="rv-text" placeholder="Tell us about your experience..."></textarea>
-        <div class="form-error" id="err-text">Please write a review.</div>
-      </div>
-
-      <button class="btn btn-green btn-full" id="submit-review">Submit Review</button>
-      <div class="form-error" id="err-submit" style="text-align:center;margin-top:10px;font-size:13px;"></div>
-    </div>
-
-    <div class="submit-success" id="review-success">
-      <div class="big-icon">&#127807;</div>
-      <p><strong>Thank you for your feedback!</strong><br>Your review will be added after review.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ GALLERY MODAL ════════════════════════════════ -->
-<div class="modal-overlay" id="gallery-modal" role="dialog" aria-modal="true">
-  <div class="modal-box modal-box--dark">
-    <button class="modal-close modal-close--light" id="close-gallery-modal" aria-label="Close">&times;</button>
-    <div class="gallery-counter" id="gallery-counter">1 / 1</div>
-
-    <div class="gallery-img-wrap" id="gallery-img-wrap">
-      <div class="gallery-placeholder">&#127807;</div>
-    </div>
-
-    <div class="gallery-dots-row" id="gallery-dots-row"></div>
-
-    <div class="gallery-nav">
-      <button class="gallery-btn" id="gallery-prev">&#8249;</button>
-      <button class="gallery-btn" id="gallery-next">&#8250;</button>
-    </div>
-  </div>
-</div>
-
-<!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="js/main.js"></script>
 </body>
